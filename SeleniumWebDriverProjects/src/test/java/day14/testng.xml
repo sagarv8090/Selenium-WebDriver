@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+	<groups>
+	<run>
+	<!-- execute every regression method group-->
+	<include name="Regression"></include>
+	<!-- does not execute sanity group-->
+	<!-- <exclude name="sanity"></exclude>-->
+	<!-- for executing combination of regression and sanity we have given name as functional-->
+	<include name="functional"></include>
+	</run>
+	</groups>
+    <classes>
+      <class name="day14.Login"/>
+      <class name="day14.SignUp"/>
+      <class name="day14.Payment"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
