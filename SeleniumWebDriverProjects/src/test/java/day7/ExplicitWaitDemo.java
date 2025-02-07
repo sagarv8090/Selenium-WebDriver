@@ -23,16 +23,16 @@ public class ExplicitWaitDemo {
 		signIn.click();
 
 		WebElement loginId=myWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("id_login")));
-		loginId.sendKeys("]]hkcnzx");
+		loginId.sendKeys("sagar_vishwakarma_123");
 		
 		WebElement Password=myWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("id_password")));
-		Password.sendKeys("s090");
+		Password.sendKeys("svdrs8090");
 		
-//		WebElement verifyCheckbox= myWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='checkbox']")));
-//		verifyCheckbox.click();
-//		
-//		WebElement signInBtn=myWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("signin_btn")));
-//		signInBtn.click();
+		WebElement verifyCheckbox= myWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='checkbox']")));
+		verifyCheckbox.click();
+		
+		WebElement signInBtn=myWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("signin_btn")));
+		signInBtn.click();
 	}
 
 }
